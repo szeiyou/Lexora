@@ -2,7 +2,15 @@
 
 Lexora 是基于 `Tauri v2 + React + TypeScript` 的 Windows 端 AI 电子辞典客户端，支持词汇查询、文本翻译、历史记录和单词本。
 
-本仓库包含桌面客户端，运行时需要自行部署或接入兼容的 DicServer 服务，接口要求见 [服务端 API 文档](./服务端API接口文档.md)。
+本仓库包含桌面客户端，配套后端为 [Lexora Server](https://github.com/szeiyou/lexora-server)，运行时需要先部署服务端或接入兼容服务。
+
+## 配套服务端
+
+[Lexora Server](https://github.com/szeiyou/lexora-server) 是基于 Java 21 和 Spring Boot 的 AI 词典后端，为客户端提供中英词条查询、短文翻译、语音朗读、查询历史、单词本管理及账号认证接口。服务端支持配置 LLM 和语音服务，并提供 Docker Compose 部署方式。
+
+使用前请按 [服务端快速开始](https://github.com/szeiyou/lexora-server#快速开始) 配置并启动后端，然后在客户端“设置”页填写客户端可访问的完整服务地址（例如 `http://localhost:8080`，适用于客户端与服务端运行在同一台机器上），再注册或登录账号。
+
+部署细节见 [服务端部署指南](https://github.com/szeiyou/lexora-server/blob/main/docs/runbook.md)，客户端使用的接口要求见本仓库的 [服务端 API 文档](./服务端API接口文档.md)。
 
 ## 技术栈
 
