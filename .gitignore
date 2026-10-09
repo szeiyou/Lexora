@@ -1,0 +1,22 @@
+node_modules/
+dist/
+target/
+src-tauri/target/
+src-tauri/gen/
+playwright-report/
+test-results/
+.worktrees/
+.superpowers/
+.DS_Store
+
+# Local credentials and development tool settings
+server.info
+.env
+.env.*
+!.env.example
+.claude/
+.codex
+.agents/
+.aws/
+*.pem
+*.key
